@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Crimson Pro', serif;
     box-sizing: border-box;
 }
 body {
@@ -11,4 +13,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navigation ul {
+    display: flex;
+    background-color: #000;
+    border-radius: 5px;
+    position: relative;
+}
+.navigation ul li {
+    list-style: none;
+    text-align: center;
+    z-index: 2;
+}
+.home {
+    width: 120px;
+}
+.services {
+    width: 180px;
+}
+.about {
+    width: 150px;
+}
+.contact {
+    width: 180px;
+}
+.navigation ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #eeeeee;
+    display: block;
+}
+.slider {
+    position: absolute;
+    width: 0px;
+    height: 100%;  /*height: 5px; will make it slimer and roll under it*/
+    left: 0;
+    background-color: #ec401a;
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.5s ease;
 }
